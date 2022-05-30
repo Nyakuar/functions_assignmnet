@@ -1,14 +1,14 @@
 
-# Write a function that accepts any number of 
-# integers as positional arguments and any number 
-# of a student's attributes as keyword arguments 
-# and prints the result of multiplying all of the 
-# integers with a customized greeting based on the keyword arguments. 
+# Write a function that accepts any number of integers as positional
+# arguments and any number of a student's attributes as keyword arguments 
+# and prints the result of multiplying all of the integers with a customized greeting based o
+# n the keyword arguments. Name the function multiply_and_greet.
+
 def multiply_and_greet(*args, **kwargs):
-    total = 1
+    item = 1
     for x in args:
         total *= x
-        print(total)
+        print(item)
 
     key = kwargs.keys()
     if "Country" in key:
@@ -19,5 +19,5 @@ def multiply_and_greet(*args, **kwargs):
     elif "name" in key:
         print(f"{kwargs['name']}") 
     else:
-       print(f"Are you a human?") 
+       print(f"Are you a Anonymous?") 
        
